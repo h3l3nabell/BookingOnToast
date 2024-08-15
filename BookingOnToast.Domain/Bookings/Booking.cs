@@ -1,6 +1,7 @@
 ﻿using BookingOnToast.Domain.Abstractions;
 using BookingOnToast.Domain.Bookings.Events;
 using BookingOnToast.Domain.Common;
+using BookingOnToast.Domain.Listings;
 
 namespace BookingOnToast.Domain.Bookings;
 
@@ -43,15 +44,17 @@ public sealed class Booking : Entity
     public DateTime RejectedOnUtc { get; private set; }
     public DateTime CancelledOnUtc { get; private set; }
 
-    public static Booking Reserve(Guid listingId,
+    public static Booking Reserve(
+        Listing listing,
         Guid userID,
         DateRange duration,
         DateTime utcNow,
-        PricingDetails pricingDetails)
+        PricingService pricingService)
     {
+        var pricingDetails = pricingService.CalculatePrice(listing, duration);
         var booking = new Booking(
             Guid.NewGuid(),
-            listingId,
+            listing.Id,
             userID,
             duration,
             pricingDetails.PriceForPeriod,
@@ -61,6 +64,7 @@ public sealed class Booking : Entity
             BookingStatus.Reserved,
             utcNow);
         booking.RaiseDomainEvent(new BookingReservedDomainEvent(booking.Id));
+        listing.LastBookedOnUTC = utcNow;
         return booking;
     }
 }

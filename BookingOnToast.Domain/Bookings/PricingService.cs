@@ -3,7 +3,7 @@ using BookingOnToast.Domain.Listings;
 
 namespace BookingOnToast.Domain.Bookings;
 
-internal class PricingService
+public class PricingService
 {
     public PricingDetails CalculatePrice(Listing listing, DateRange period)
     {

@@ -31,7 +31,7 @@ public sealed class Listing : Entity
 
     public Money CleaningFee { get; private set; }
 
-    public DateTime? LastBookedOnUTC { get; private set; }
+    public DateTime? LastBookedOnUTC { get; internal set; }
 
     public List<Amenity> Amenities { get; private set; } = new();
 }
