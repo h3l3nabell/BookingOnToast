@@ -12,6 +12,6 @@ public record Address
      string PostCode,
      string Street,
      string City,
-     string State,
+     string County,
      string CountryCode 
 );
