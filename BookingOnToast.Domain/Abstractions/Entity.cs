@@ -1,17 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookingOnToast.Domain.Abstractions;
+﻿namespace BookingOnToast.Domain.Abstractions;
 
 public abstract class Entity
 {
-    protected Entity(int id)
+    private readonly List<IDomainEvent> _domainEvents = new();
+    protected Entity(Guid id)
     {
         Id = id;
     }
-    public int Id { get; init; }
+    public Guid Id { get; init; }
+
+    public IReadOnlyList<IDomainEvent> GetDomainEvents()
+    {
+        return _domainEvents.ToList();
+    }
+    public void ClearDomainEvents()
+    {
+        _domainEvents.Clear();
+    }
+
+    protected void RaiseDomainEvent(IDomainEvent domainEvent)
+    {
+        _domainEvents.Add(domainEvent);
+    }
 }
 

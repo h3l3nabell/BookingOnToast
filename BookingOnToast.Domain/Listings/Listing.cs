@@ -9,7 +9,7 @@ namespace BookingOnToast.Domain.Listings;
 
 public sealed class Listing : Entity
 {
-    public Listing(int id
+    public Listing(Guid id
         , Name name
         , Description description
         , Address address

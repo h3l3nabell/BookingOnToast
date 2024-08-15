@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KpZLFC4fNns=",
+  "dgSpecHash": "7rma5qNRBEw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\helen\\OneDrive - Chaos on Toast Limited\\code\\Booking-On-Toast\\BookingOnToast\\BookingOnToast.Domain\\BookingOnToast.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\helen\\OneDrive - Chaos on Toast Limited\\code\\BookingOnToast\\h3l3nabell\\BookingOnToast\\BookingOnToast.Domain\\BookingOnToast.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\helen\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
