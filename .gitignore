@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/BookingOnToast.Domain/obj/Debug/net8.0/BookingOnToast.Domain.AssemblyInfoInputs.cache
+/BookingOnToast.Domain/obj/Debug/net8.0/BookingOnToast.Domain.AssemblyInfo.cs
