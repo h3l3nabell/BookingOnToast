@@ -1,4 +1,4 @@
-﻿namespace BookingOnToast.Domain.Listings;
+﻿namespace BookingOnToast.Domain.Common;
 
 public record Currency
 {
@@ -7,7 +7,7 @@ public record Currency
     public static readonly Currency Eur = new("EUR");
     internal static readonly Currency None = new("");
     private Currency(string code) => Code = code;
-    
+
     public string Code { get; init; }
 
     public static Currency FromCode(string code)

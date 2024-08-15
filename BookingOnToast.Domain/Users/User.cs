@@ -1,12 +1,7 @@
 ﻿using BookingOnToast.Domain.Abstractions;
-using BookingOnToast.Domain.User.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BookingOnToast.Domain.Users.Events;
 
-namespace BookingOnToast.Domain.User;
+namespace BookingOnToast.Domain.Users;
 
 public sealed class User : Entity
 {

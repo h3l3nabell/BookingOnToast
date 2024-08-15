@@ -1,4 +1,4 @@
-﻿namespace BookingOnToast.Domain.User;
+﻿namespace BookingOnToast.Domain.Users;
 
 public interface IUserRepository
 {

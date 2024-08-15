@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookingOnToast.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d83df713673508915b9113ea09d29f51dd977ec2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86b9935d0813b031f05fc20fc610fae6a34c359d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookingOnToast.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookingOnToast.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
