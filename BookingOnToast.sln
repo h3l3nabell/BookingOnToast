@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{997059A0-182
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B288A2A5-3924-4027-9A9F-96F636D6B692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingOnToast.Domain", "BookingOnToast.Domain\BookingOnToast.Domain.csproj", "{E519AF7D-745E-40D4-AD12-BACD76E54C06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingOnToast.Domain", "BookingOnToast.Domain\BookingOnToast.Domain.csproj", "{E519AF7D-745E-40D4-AD12-BACD76E54C06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingOnToast.Application", "BookingOnToast.Application\BookingOnToast.Application.csproj", "{8B3E7FAC-492B-4E05-A072-05C311531D1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{E519AF7D-745E-40D4-AD12-BACD76E54C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E519AF7D-745E-40D4-AD12-BACD76E54C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E519AF7D-745E-40D4-AD12-BACD76E54C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3E7FAC-492B-4E05-A072-05C311531D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3E7FAC-492B-4E05-A072-05C311531D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3E7FAC-492B-4E05-A072-05C311531D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3E7FAC-492B-4E05-A072-05C311531D1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E519AF7D-745E-40D4-AD12-BACD76E54C06} = {997059A0-1827-4192-8232-BE5524D459CF}
+		{8B3E7FAC-492B-4E05-A072-05C311531D1F} = {997059A0-1827-4192-8232-BE5524D459CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0719ACD5-D077-4ECA-9E1E-DF78BE2927D0}
